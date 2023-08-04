@@ -9,7 +9,7 @@ import FileUpload from "./FileUpload";
 const AddProjectionClient = () => {
   const [show, setShow] = useState(false);
   const router = useRouter()
-  console.log(show);
+  // console.log(show);
   return (
     <div
       className={`grid ${
@@ -58,9 +58,9 @@ const AddProjectionClient = () => {
             />
           </div>
           <div className="group-hover:opacity-70">What is projection ?</div>
-          <div className="flex-col ">
-            <FileUpload />
           </div>
+          <div className="flex justify-center mt-52 ">
+            <FileUpload />
         </div>
       </div>
       <div className={`p-6 ${show ? "hidden" : "block"}`}>grid2</div>
